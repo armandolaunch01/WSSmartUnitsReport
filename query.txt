@@ -1,0 +1,37 @@
+SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre 
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_altotrack = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_rconfiable = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_unigis = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_dhl = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_movup = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_widetech = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_bafar = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_vetaws = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_semovi = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_solistica = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_tms = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id)
+UNION ALL (SELECT DISTINCT C.c_cliente_nombre, F.c_flotilla_nombre, U.c_unidad_nombre
+FROM dat_Unidad U, dat_Cliente C, dat_Flotilla F, rel_UnidadFlotilla UF
+WHERE U.n_estatus_id = 1  AND C.n_estatus_id = 1  AND F.n_estatus_id =1 AND UF.n_estatus_id = 1 AND b_unidad_tracktiweb = 1  AND C.n_cliente_id = U.n_cliente_id  AND C.n_cliente_id = F.n_cliente_id AND UF.n_unidad_id = U.n_unidad_id  AND UF.n_flotilla_id = F.n_flotilla_id);
+
